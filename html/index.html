@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"
+        name="google-signin-client_id" content="98182763702-p08s2s242031l2c6d0jsn8mk5fv3hv0d.apps.googleusercontent.com.apps.googleusercontent.com">
+  <title>Calendar test</title>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="../js/main.js"></script>
+</head>
+
+<body>
+  <iframe src="https://calendar.google.com/calendar/embed?src=47qh2guhe4ug4cocr389kescc0%40group.calendar.google.com&ctz=Europe%2FMoscow"
+          style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe><br>
+  <button type="button" onclick="myFunction()">Btn</button>
+
+  <button onclick="authenticate().then(loadClient)">authorize and load</button>
+  <button onclick="authenticate().then(loadClient).then(execute).then(reload_page)">execute</button>
+
+</body>
+</html>

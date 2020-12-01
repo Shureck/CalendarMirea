@@ -1,0 +1,61 @@
+.tableList li {
+  list-style-type: none; /* Убираем маркеры */
+}
+.tableList ul {
+  margin-left: 0; /* Отступ слева в браузере IE и Opera */
+  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+.tableList{
+  width: 100%;
+}
+
+.rasp{
+  top: 1em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#i1, #i2, #i3, #i4, #i5, #i6{
+  padding: 4px;
+}
+
+.tag{
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+#i1 .tag{
+  background: #3c2ad5;
+}
+#i2 .tag{
+  background: #d4302b;
+}
+#i3 .tag{
+  background: #2bd430;
+}
+#i4 .tag{
+  background: #32c5cd;
+}
+#i5 .tag{
+  background: #cd32c5;
+}
+#i6 .tag{
+  background: #c5cd32;
+}
+
+.tableList span{
+  padding: 2px;
+  border-radius: 5px;
+  background: #888888;
+}
+
+.tableList li{
+  font-size: 15px;
+  padding: 3px;
+  padding-top: 5px;
+}
+
