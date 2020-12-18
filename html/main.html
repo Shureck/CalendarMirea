@@ -28,6 +28,18 @@
       border: solid 1px black;
       position: fixed;
       z-index: 999999;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    #find{
+
+    }
+    #google{
+
     }
 
     img {
@@ -35,10 +47,14 @@
     }
   </style>
 
-
 </head>
 <body>
-<div class="tablichka"></div>
+
+<div class="tablichka">
+  <div> </div>
+</div>
+
+
 <div id="wrapper">
   <div class="calend" align="right">
     <table id="calendar2">
@@ -80,7 +96,7 @@
     </ul>
   </nav>
 
-  <div class="rasp">
+  <div class="container">
     <div class="tableList" id="i1">
       <ul><div class="tag">Понедельник</div>
           <li><span>&nbsp;9:00-10:30&nbsp;</span> Время умирать</li>
@@ -153,9 +169,9 @@
     <table id="calendar3">
       <thead>
       <tr>
-        <td>‹
+        <td id="left">‹
         <td colspan="5">
-        <td>›
+        <td id="right">›
       <tr>
         <td>Пн
         <td>Вт

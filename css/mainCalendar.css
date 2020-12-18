@@ -33,10 +33,76 @@
 }
 
 #calendar3 tbody td.today {
-  background: rgb(220, 0, 0);
-  color: #fff;
+  border: 4px solid rgb(220, 0, 0);
 }
 
+#calendar3 tbody td.num.a6, td.today.a6{
+  background: rgb(0,255,20);
+  background: linear-gradient(0deg, rgba(0,255,20,0.4321078773306197) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 100%);
+}
+
+#calendar3 tbody td.num.a5, td.today.a5 {
+  background: rgb(207,255,0);
+  background: linear-gradient(0deg, rgba(207,255,0,0.4321078773306197) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 100%);
+}
+
+#calendar3 tbody td.num.a4, td.today.a4 {
+  background: rgb(255,239,0);
+  background: linear-gradient(0deg, rgba(255,239,0,0.4321078773306197) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 100%);
+}
+
+#calendar3 tbody td.num.a3, td.today.a3 {
+  background: rgb(255,183,0);
+  background: linear-gradient(0deg, rgba(255,183,0,0.4321078773306197) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 100%);
+}
+
+#calendar3 tbody td.num.a2, td.today.a2 {
+  background: rgb(255,80,0);
+  background: linear-gradient(0deg, rgba(255,80,0,0.4321078773306197) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 100%);
+}
+
+#calendar3 tbody td.num.a1, td.today.a1 {
+  background: rgb(255,0,0);
+  background: linear-gradient(0deg, rgba(255,0,0,0.4321078773306197) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 100%);
+}
+
+#calendar3 tbody td {
+  position: relative;
+}
+
+#calendar3 tbody td .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+  transition: opacity 0.3s;
+}
+
+#calendar3 tbody td .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+#calendar3 tbody td:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
 
 
 /*
